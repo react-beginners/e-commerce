@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 
+import ProductCategory from '../products/category.component';
 import './directory.css';
 
 class Directory extends Component {
@@ -47,9 +48,9 @@ class Directory extends Component {
     render(){
         return(
             <div className='directory-menu'>
-                {this.state.sections.map(({id}, {...section}) => {
-                    console.log({id});
-                })}
+                {this.state.sections.map(({id, ...section}) => (
+                  <ProductCategory key={id} {...section}/>
+                ))}
             </div> 
         );
     }
