@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-import './category-item.styles.css';
+import './category-item.scss';
 
 const productCategory = ({ title, imageUrl, size, history, linkUrl, match }) => (
   <div
