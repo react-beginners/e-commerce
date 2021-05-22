@@ -13,8 +13,9 @@ function App() {
     <React.Fragment>
       <Header />
       <Switch>
-        <Route exact path='/shop'><ShopPage /></Route>
-        <Route  exact path='/'><HomePage /></Route>
+      <Route exact path='/shop/:category' component={ShopPage} />
+        <Route exact path='/shop'component={ShopPage} />
+        <Route  exact path='/' component={HomePage} />
         <Route  path='*' component={PageNotFound}/>
       </Switch>
     </React.Fragment>
