@@ -21,7 +21,7 @@ export default class ShopPage extends React.Component{
             return(
                 <div className='shop-page' style={{margin: "0 10px"}}>
                     {collections
-                    .filter((collections, index) => collections.routeName == categoryTitle)
+                    .filter((collections, index) => collections.routeName === categoryTitle)
                     .map(({id, ...shoplist}) => (
                         <CollectionPreview showall={true} key={id} {...shoplist}/>   
                     ))}
