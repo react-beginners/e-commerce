@@ -14,6 +14,7 @@ export default class ShopPage extends React.Component{
         
     }
 
+
     render(){
         const { collections, categoryTitle } = this.state;
         if(typeof categoryTitle !== 'undefined'){
